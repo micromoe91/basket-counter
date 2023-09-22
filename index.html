@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+    <head>
+        <script src="index.js" defer></script>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Six+Caps&family=Tourney:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- start of the display-box -->
+        <div class="point-box"> 
+            <!-- start home-side -->
+            <div class="sides">
+                <h1 class="side-header">Home Points</h1>
+                <!-- start display points -->
+                <div class="points">
+                    <h2 id="home-count">0</h2>
+                    <div class="point-style">
+                        <p id="home-ftps">ftps: </p>
+                        <p id="home-2s">2s: </p>
+                        <p id="home-3s">3s: </p>
+                    </div>
+                </div>
+                <!-- end display points -->
+
+                <!-- start buttons -->
+                <div class="point-btns">
+                    <button onclick="homeFtp()"><strong>free throw</strong></button>
+                    <button onclick="home2()"><strong>2</strong></button>
+                    <button id="three-point-btn" onclick="home3()"><strong>3</strong></button>
+                </div>
+                <!-- end buttons -->
+            </div>
+            <!-- end home side -->
+
+            <!-- start away-side -->
+            <div class="sides">
+                <!-- start display points -->
+                <h1 class="side-header">Away Points</h1>
+                <div class="points">
+                    <h2 id="away-count">0</h2>
+                    <div class="point-style">
+                        <p id="away-ftps">ftps: </p>
+                        <p id="away-2s">2s: </p>
+                        <p id="away-3s">3s: </p>
+                    </div>
+                </div>
+                <!-- end display points -->
+
+                <!-- start buttons -->
+                <div class="point-btns">
+                    <button onclick="awayFtp()"><strong>free throw</strong></button>
+                    <button onclick="away2()"><strong>2</strong></button>
+                    <button id="three-point-btn" onclick="away3()"><strong>3</strong></button>
+                </div>
+                <!-- end buttons -->
+            </div>
+            <!-- end away-side -->
+        </div>
+        <!-- end of the display-box -->
+    </body>
+
+    
+</html>
